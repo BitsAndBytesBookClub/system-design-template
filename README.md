@@ -7,6 +7,7 @@ System design template to help with creation/brainstorming of system designs
 
 Scoping (MVP)
 <INSERT BRIEF OVERVIEW IN BULLET POINTS WHAT REQUIREMENTS>
+
 examples:
 
 - User can create an account and authenticate 
@@ -16,8 +17,9 @@ examples:
 
 ### Flow 
 <INSERT FLOW FOR USER EXPERIENCE IF THERE IS ONE>
-example:
-	
+
+example:	
+
 User uploads photo -> photo is placed in to blob storage -> sends event to queue system with image metadata -> worker picks up event -> worker sends geolocation to data store 
 
 <INSERT DIAGRAM HERE I LIKE TO USE EXCALIDRAW>
@@ -26,6 +28,7 @@ User uploads photo -> photo is placed in to blob storage -> sends event to queue
 
 ### Data store
 <INSERT YOUR DATA MODELS>
+
 examples:
 	
 Tables: users (User entity), images (ImageData entity)
@@ -67,6 +70,7 @@ entity NewImageUploadEvent {
 
 # API
 <INSERT YOUR API ROUTES IF THERE ARE ANY>
+
 examples:
 	
 `POST /api/v1/:user_id/images`
