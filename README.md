@@ -6,7 +6,8 @@ System design template to help with creation/brainstorming of system designs
 # SYSTEM DESIGN NAME (PRODUCT/PROJECT NAME)
 
 Scoping (MVP)
-<INSERT BRIEF OVERVIEW IN BULLET POINTS WHAT REQUIREMENTS>
+
+*INSERT BRIEF OVERVIEW IN BULLET POINTS WHAT REQUIREMENTS*
 
 examples:
 
@@ -16,7 +17,8 @@ examples:
 ## Technical design
 
 ### Flow 
-<INSERT FLOW FOR USER EXPERIENCE IF THERE IS ONE>
+
+*INSERT FLOW FOR USER EXPERIENCE IF THERE IS ONE*
 
 example:	
 
@@ -27,7 +29,8 @@ User uploads photo -> photo is placed in to blob storage -> sends event to queue
 ## Data models
 
 ### Data store
-<INSERT YOUR DATA MODELS>
+
+*INSERT YOUR DATA MODELS*
 
 examples:
 	
@@ -69,7 +72,8 @@ entity NewImageUploadEvent {
 ```
 
 # API
-<INSERT YOUR API ROUTES IF THERE ARE ANY>
+
+*INSERT YOUR API ROUTES IF THERE ARE ANY*
 
 examples:
 	
