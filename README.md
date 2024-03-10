@@ -3,24 +3,31 @@ System design template to help with creation/brainstorming of system designs
 
 # Template
 ---
+# SYSTEM DESIGN NAME (PRODUCT/PROJECT NAME)
 
 Scoping (MVP)
+<INSERT BRIEF OVERVIEW IN BULLET POINTS WHAT REQUIREMENTS>
+examples:
+
 - User can create an account and authenticate 
 - User can upload PNG or JPEG photo 
-- If photo has geolocation metadata it will get pinned on an interactive map
-- If photo does not have geolocation metadata user will get a notification and image will not be imported to system
-Scoping (Phase 2)
-- User can select location on map if no geolocation metadata
 
 ## Technical design
 
 ### Flow 
+<INSERT FLOW FOR USER EXPERIENCE IF THERE IS ONE>
+example:
+	
 User uploads photo -> photo is placed in to blob storage -> sends event to queue system with image metadata -> worker picks up event -> worker sends geolocation to data store 
 
-![[geotagz|800]]
+<INSERT DIAGRAM HERE I LIKE TO USE EXCALIDRAW>
+	
 ## Data models
 
 ### Data store
+<INSERT YOUR DATA MODELS>
+examples:
+	
 Tables: users (User entity), images (ImageData entity)
 
 ```plantuml-svg
@@ -59,7 +66,9 @@ entity NewImageUploadEvent {
 ```
 
 # API
-
+<INSERT YOUR API ROUTES IF THERE ARE ANY>
+examples:
+	
 `POST /api/v1/:user_id/images`
 
 DTO 
